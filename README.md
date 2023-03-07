@@ -5,14 +5,14 @@
 
 >Status: Developing ⚠️
 
-### Progeto escolar de um Blog!
+### Projeto escolar de um Blog!
 
-Projeto feito para estudos das cores e para compreender os diferentes formatos de sites.
+Feito para estudos das cores e para compreender os diferentes formatos de sites.
 
 ## Conteudo
 
 + Cabeçalho
-+ Temas
++ Artigos
 + Cards com os conteudos
 + Ver mais conteudo
 
