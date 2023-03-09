@@ -5,9 +5,309 @@
 
     font-family: 'Josefin Sans', sans-serif;
 
+    text-decoration: none;
+    list-style: none;
+
+}
+:root{
+
+    --color-destaques- :#8080FF;
+    --color-text-: #000000;
+    --color-subtext-: #272727;
+    --color-bg-: #ffffff;
+
+    overflow-x: hidden;
+
 }
 .header{
 
-    display: inline-block;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 12px 40px;
+    padding-top: 20px;
     
+}
+.header .btn-aboutus {
+
+    margin-left: auto;
+
+}
+.header .logo-h1 span{
+
+    color: var(--color-destaques-);
+
+}
+.btn-aboutus{
+
+    font-size: 25px;
+
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+
+}
+.gender{
+
+    text-align: center;
+
+    padding: 15px;
+    margin: 110px;
+    margin-bottom: 50px;
+
+}
+
+.gender-li {
+
+    display: inline-block;
+
+    margin: 0 6px;
+
+    font-size: 20px;
+    border: 2px var(--color-text-) solid;
+    border-radius: 18px;
+    box-shadow: 0px 0px 2px -1px var(--color-text-);
+
+    padding: 12px;
+    
+    text-align: center;
+    align-items: center;
+
+    transition: .5s;
+
+    cursor: url('cursorhover.png'), auto;
+    
+
+}
+.gender-li:hover{
+
+    box-shadow: 0px 0px 8px -5px var(--color-text-);
+    transform: scale(1.05);
+
+    transition: .5s;
+
+}
+.articles-h2{
+
+    margin: 50px 85px;
+
+    font-size: 32px;
+
+    color: var(--color-destaques-);
+
+}
+.main-articles{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+
+}
+.main-content{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    max-width: 1200px;
+
+
+}
+.card-content{
+
+    flex: 1 1 150px;
+    flex-basis: 33.33%;    
+
+    z-index: 2;
+
+    background-color: var(--color-bg-);
+
+    max-width: 350px;
+    min-width: 350px;
+    height: 340px;
+    margin: 10px;
+
+    box-shadow: 0px 0px 10px -2px var(--color-text-);
+
+    border-radius: 18px;
+
+    flex: 1;
+    margin: 10px 10px;
+
+    transition: .5s;
+
+}
+.card-content:hover{
+
+    transform: scale(1.05);
+
+    transition: .5s;
+
+}
+.card-content img{
+
+    width: 350px;
+    height: 200px;
+
+    border-top-right-radius: 18px;
+    border-top-left-radius: 18px;
+
+}
+.card-content .card-h2{
+
+    padding: 15px 30px 0;
+
+    font-size: 24px;
+
+}
+.card-content .card-date{
+
+    padding-left: 46%;
+
+    font-size: 20px;
+
+    color: var(--color-subtext-);
+
+}
+.card-content .card-p{
+
+    text-align: left;
+    padding: 0 35px;
+    color: var(--color-text-);
+
+    font-size: 16.5px;
+
+}
+.btn-readmore{
+
+    display: block;
+
+    position: relative;
+
+    margin: 20px auto;
+
+    padding: 18px;
+
+    font-size: 18.5px;
+    color: var(--color-bg-);
+
+    background-color: var(--color-destaques-);
+    border: none;
+    border-radius: 15px;
+
+    transition: .5s;
+
+}
+.btn-readmore:hover{
+
+    transform: scale(1.05);
+
+    transition: .5s;
+
+}
+
+/* ----- */
+
+@media (max-width: 1126px)
+{
+    .gender{
+
+        margin: 80px 0;
+
+    }
+
+    .gender-li{
+
+        font-size: 18px;
+
+        margin: 1px;
+
+    }
+
+    .main-content{
+
+        width: 680px;
+
+    }
+    .card-content{
+
+        max-width: 660px;
+        height: 240px;
+        
+
+    }
+    .card-content img{
+
+        float: left;
+
+        width: 286px;
+        height: 186px;
+
+        padding: 30px 10px 20px;
+
+    }
+    .card-content .card-date{
+    
+        padding-left: 30%;
+    
+        font-size: 20px;
+    
+    
+    }
+    .card-content .card-p{
+    
+        padding-top: 20px;
+    
+        font-size: 22px;
+    
+    }
+
+}
+@media (max-width: 695px)
+{
+    
+    .card-content{
+    
+        max-width: 350px;
+        min-width: 350px;
+        height: 340px;
+    
+    }
+    .card-content img{
+        
+        width: 350px;
+        height: 200px;
+
+        padding: 0;
+        padding-bottom: 10px;
+    
+        border-top-right-radius: 18px;
+        border-top-left-radius: 18px;
+
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+
+
+    
+    }
+    .card-content .card-date{
+    
+        padding-left: 46%;
+    
+        font-size: 20px;
+    
+    
+    }
+    .card-content .card-p{
+    
+        padding: 0 35px;
+    
+        font-size: 17.4px;
+    
+    }
+
 }
