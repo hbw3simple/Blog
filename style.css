@@ -42,6 +42,8 @@
 }
 .btn-aboutus{
 
+    color: var(--color-text-);
+
     font-size: 25px;
 
     background-color: transparent;
@@ -269,17 +271,35 @@
 }
 @media (max-width: 695px)
 {
+
+    .header .logo-h1{
+
+        font-size: 25px;
+
+    }
+    .header .btn-aboutus{
+
+        font-size: 20px;
+
+    }
+    .articles-h2{
+
+        margin-left: 50px;
+
+    }
     
     .card-content{
     
         max-width: 350px;
-        min-width: 350px;
+        min-width: 300px;
         height: 340px;
     
     }
     .card-content img{
         
-        width: 350px;
+        max-width: 350px;
+        width: 100%;
+        min-width: 300px;
         height: 200px;
 
         padding: 0;
@@ -296,7 +316,7 @@
     }
     .card-content .card-date{
     
-        padding-left: 46%;
+        padding-left: 38%;
     
         font-size: 20px;
     
